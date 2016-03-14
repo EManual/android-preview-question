@@ -5,3 +5,7 @@
     max-width: 980px;
     margin: 0 auto;
 }
+/*让段落铺满再换行*/
+p {
+  word-break: break-all;
+}
