@@ -1,5 +1,6 @@
 (function(window, $) {
   $(document).ready(function() {
+    var selector_title = $('title');
     var selector_description = $('#question_description')
     var selector_option_container = $('#option-container')
     var select_tpl_option = $('#tpl_option')
@@ -10,6 +11,7 @@
     window.updateQuestion = function(question) {
       //渲染描述
       selector_description.html(question.description)
+      selector_title.html(selector_description.text())
 
       if (question.type === 'choice') {
         var options = []
