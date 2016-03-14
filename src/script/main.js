@@ -19,7 +19,8 @@
         selector_option_container.html(options.join(''))
       }
       //渲染答案
-      question.answer = question.answer || '答案: 无'
+      var answer_wrapper = '<p>参考答案:</p>';
+      question.answer = answer_wrapper + (question.answer || '无')
       select_question_answer.html(question.answer)
     }
     /**
